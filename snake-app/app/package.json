@@ -1,0 +1,26 @@
+{
+  "name": "snake-app",
+  "version": "1.0.0",
+  "description": "A Desktop game built with Electron-vue template.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wopara1/snake.git"
+  },
+  "author": "Emmanuel Wopara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wopara1/snake/issues"
+  },
+  "homepage": "https://github.com/wopara1/snake#readme",
+  "devDependencies": {
+    "vue": "^3.4.15",
+    "vue-electron": "^1.0.6",
+    "vue-resource": "^1.5.3",
+    "vue-router": "^4.2.5",
+    "vuex": "^4.1.0"
+  }
+}

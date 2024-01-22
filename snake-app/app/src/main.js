@@ -1,5 +1,6 @@
 const { app, BrowserWindow } = require('electron');
 const path = require('path');
+const url = require('url'); 
 
 let mainWindow;
 
@@ -9,6 +10,7 @@ function createWindow() {
         height: 600,
         webPreferences: {
             nodeIntegration: true,
+            devTools: true,
         },
     });
 
@@ -27,7 +29,11 @@ function createWindow() {
     });
 }
 
-app.whenReady().then(createWindow);
+app.whenReady().then(() => {
+    createWindow();
+}).catch((error) => {
+    console.error('Error creating window:', error);
+});
 
 app.on('window-all-closed', function () {
     if (process.platform !== 'darwin') app.quit();
